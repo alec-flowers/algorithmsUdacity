@@ -1,0 +1,11 @@
+Problem 1 - Square Root of an Integer
+Design Choices
+The formula is :
+x(n+1) = x(n) - f(x(n))/f'(x(n)) = 1/2 (x(n)+a/(x(n))). This is the arithmetic mean of x(n) and a/x(n). The basic idea being if x(n) > sqrt(a) then a/x(n) < sqrt(a) so the arithmetic mean will get us a better estimate. 
+
+Time Complexity
+N = range(1,number) - The brute force solution would be iterating starting from 1 up to the number and calculating the square. I would classify this as O(N) time.
+O(log(N))
+
+Space Complexity
+O(1) - I do not create any additional data structures. I just have one variable x that I set the input to. 
