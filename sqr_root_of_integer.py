@@ -1,5 +1,4 @@
 
-
 def sqrt(number):
     """
     Calculate the floored square root of a number. Sovling using Newtons iterative method. 

@@ -9,3 +9,20 @@ O(log(N))
 
 Space Complexity
 O(1) - I do not create any additional data structures. I just have one variable x that I set the input to. 
+
+
+Problem 2 - Search a Rotated Sorted Array
+Design Choices
+To search a normal sorted array in log n time you would use binary search which cuts your search space in half every iteration.
+I knew then that this would just be a modified version of binary search. The trick here is to know where the pivot in the array is.
+You can figure this out by checking if the first element in the array greater than the middle element. If so you know that the pivot
+occured in the left part of the array and that the right side of the array is "sorted". 
+
+Time Complexity
+N = number of items in initial array
+O(Log N)
+Since we use binary search we cut the search space in half by a factor of 2. This is Log N time complexity. 
+
+Space Complexity
+O(1)
+We don't create any additional data structures as we just keep track of indices in the arrray. 
