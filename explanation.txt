@@ -26,3 +26,21 @@ Since we use binary search we cut the search space in half by a factor of 2. Thi
 Space Complexity
 O(1)
 We don't create any additional data structures as we just keep track of indices in the arrray. 
+
+
+Problem 3 - Rearrange Array Elements
+Design Choices
+The first way to solve this would be to sort the array and then fill in your numbers using the sorted array. I figured I could
+speed up the time complexity since we know there is a limit [0, 9]. I can iterate through the array and count the frequencies of 
+numbers and use this to create the two numbers to be summed. 
+
+Time Complexity
+N = number of elements in array
+O(N)
+I iterate through the array once to get the frequencies and then iterate through one more time to unwind the frequencies and turn
+it into numbers. 
+
+Space Complexity
+N = number of elements in array
+O(N)
+I create one additional array to count the frequencies. 
