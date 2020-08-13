@@ -44,3 +44,19 @@ Space Complexity
 N = number of elements in array
 O(N)
 I create one additional array to count the frequencies. 
+
+
+Problem 4 - Dutch National Flag Problem
+Design Choices
+I keep track of where in the array I need to place the Os and 2s. Once you've sorted these the 1's are also sorted in the same place. 
+
+Time Complexity
+N = number of elements in array
+O(N)
+Iterate through the array one time. 
+
+Space Complexity
+O(1)
+Modifing the array in place so no additional data structures are created.
+
+
