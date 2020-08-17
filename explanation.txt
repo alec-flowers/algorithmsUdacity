@@ -82,3 +82,17 @@ Space Complexity
 k = footprint of single node
 n = number of nodes
 O(k*n)
+
+
+Problem 6 - Max & Min in an unsorted Array
+Design Choices
+Iterated over the array with a tracker that compares each value against a max and min and swaps the value if it is a new max or min.
+
+Time Complexity
+N = number of items in array
+O(N)
+We have to check in the worst case every element in the array.
+
+Space Complexity
+O(1)
+Created two ints to keep track of max and min but nothing else. 
