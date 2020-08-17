@@ -60,3 +60,25 @@ O(1)
 Modifing the array in place so no additional data structures are created.
 
 
+Problem 5 - Autocomplete with Tries
+Design Choices
+Regarding the suffixes class - had to build this recursively in the TrieNode() class. The part I found difficult was how to pass through
+the list of items that could possibly be suffixes. In python if I use a mutable default argument and mutate it, then I have the
+mutated object for all future calls which messes up future suffix calls. I jumped around this by using a default call and checking for 
+it with an if statement. 
+
+Time Complexity
+Building a Trie
+m = length of longest word
+n = total number of words
+O(m*n)
+
+Insertion
+a = length of word
+n = total number of words
+O(a*n)
+
+Space Complexity
+k = footprint of single node
+n = number of nodes
+O(k*n)
