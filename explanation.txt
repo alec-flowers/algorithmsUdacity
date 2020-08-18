@@ -96,3 +96,21 @@ We have to check in the worst case every element in the array.
 Space Complexity
 O(1)
 Created two ints to keep track of max and min but nothing else. 
+
+
+Problem 7 - Request Routing in a Web Server with a Trie
+Time Complexity
+Building a Trie
+m = length of longest path
+n = total number of paths
+O(m*n)
+
+Insertion
+a = length of path
+n = total number of paths
+O(a*n)
+
+Space Complexity
+k = footprint of single node
+n = number of nodes
+O(k*n)
