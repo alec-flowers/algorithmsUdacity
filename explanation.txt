@@ -67,7 +67,7 @@ the list of items that could possibly be suffixes. In python if I use a mutable 
 mutated object for all future calls which messes up future suffix calls. I jumped around this by using a default call and checking for 
 it with an if statement. 
 
-Time Compleximvty
+Time Complexity
 Building a Trie
 m = length of longest word
 n = total number of words
@@ -129,6 +129,11 @@ Created a router with the a Trie being the datastructure that stored URL's and w
 the URL to the tire. Looking up a webpage requires using the Trie's find function. 
 
 Time Complexity
+Building a Trie
+m = length of longest URL (depth of tree)
+n = average length of a unique path
+O(m*n)
+
 Add Handler
 N = number of pages betwee */  */
 O(N)
@@ -141,6 +146,11 @@ Same thing for insert, except we are looking up the item at the end rather than 
 
 
 Space Complexity
+Trie Data Structure Itself
+k = footprint of single node
+n = number of nodes
+O(k*n)
+
 Add Handler
 N = number of pages betwee */  */
 O(N)
